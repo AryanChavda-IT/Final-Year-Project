@@ -1,0 +1,99 @@
+/* ===== NAVBAR BASE ===== */
+.custom-navbar{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding:18px 50px;
+  z-index:1000;
+
+  /* Glass Effect */
+  backdrop-filter: blur(14px);
+  background: rgba(0,0,0,0.35);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+
+  transition: all .4s ease;
+}
+
+/* ===== LOGO ===== */
+.logo{
+  color:white;
+  font-size:24px;
+  font-weight:600;
+  letter-spacing:1px;
+  font-family: "Playfair Display", serif;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links{
+  list-style:none;
+  align-items:center;
+}
+
+.nav-btn{
+  background:transparent;
+  border:none;
+  color:rgba(255,255,255,0.85);
+  font-weight:500;
+  font-size:15px;
+  letter-spacing:.5px;
+  cursor:pointer;
+  padding:6px 10px;
+  position:relative;
+  transition:.3s;
+}
+
+/* underline animation */
+.nav-btn::after{
+  content:"";
+  position:absolute;
+  bottom:-4px;
+  left:0;
+  width:0%;
+  height:2px;
+  background:#f1c40f;
+  transition:.4s;
+}
+
+.nav-btn:hover{
+  color:#fff;
+}
+
+.nav-btn:hover::after{
+  width:100%;
+}
+
+/* ===== AUTH BUTTONS ===== */
+.auth-buttons button{
+  border-radius:6px;
+  padding:6px 14px;
+  font-size:14px;
+  font-weight:500;
+  transition:.3s;
+}
+
+/* Sign In */
+.signin-btn{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.5);
+  color:white;
+}
+
+.signin-btn:hover{
+  background:rgba(255,255,255,0.1);
+  transform:translateY(-1px);
+}
+
+/* Sign Up */
+.signup-btn{
+  background:#f1c40f;
+  border:none;
+  color:black;
+  font-weight:600;
+}
+
+.signup-btn:hover{
+  background:#ffd84a;
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
