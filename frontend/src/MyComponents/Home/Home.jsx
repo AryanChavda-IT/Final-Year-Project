@@ -242,6 +242,7 @@ const Home = () => {
           <div className="carousel-item active">
             <img src={headerImg1} className="d-block w-100" alt="slide1" />
             <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
+              <h1>Hello Krish</h1>
               <h4>WEST VIRGINIA / UNITED STATES</h4>
               <h1>The <em>Hideaway</em> Inn</h1>
             </div>
