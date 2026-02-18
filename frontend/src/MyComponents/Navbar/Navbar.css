@@ -97,3 +97,21 @@
   transform:translateY(-2px);
   box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
+.nav-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  color: #f1c40f;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: white;
+}

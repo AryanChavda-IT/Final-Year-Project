@@ -211,7 +211,9 @@
 
 
 import "./Home.css";
-import Navbar from "../Navbar/Navbar.jsx";
+// import Navbar from "../Navbar/Navbar.jsx";
+import { Link } from "react-router-dom";
+
 
 import headerImg1 from "../../Data/main-header-1.jpg";
 import headerImg2 from "../../Data/main-header-1.jpg";
@@ -236,7 +238,7 @@ const Home = () => {
         className="col-md-12 carousel slide carousel-fade position-relative"
         data-bs-ride="carousel"
       >
-        <Navbar />
+        {/* <Navbar /> */}
 
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -274,20 +276,31 @@ const Home = () => {
       </div>
 
       {/* PAGE 2 */}
-      <div className="page2 row">
-        <div className="col-md-4">
-          <img className="img-fluid" src={gallery} alt="Gallery" />
-          <div className="text-center">Gallery</div>
-        </div>
-        <div className="col-md-4">
-          <img className="img-fluid" src={amenities} alt="Amenities" />
-          <div className="text-center">Amenities</div>
-        </div>
-        <div className="col-md-4">
-          <img className="img-fluid" src={packages} alt="Packages" />
-          <div className="text-center">Packages</div>
-        </div>
-      </div>
+<div className="page2 row text-center">
+
+  <div className="col-md-4">
+    <Link to="/gallery" className="page2-link">
+      <img className="img-fluid" src={gallery} alt="Gallery" />
+      <div>Gallery</div>
+    </Link>
+  </div>
+
+  <div className="col-md-4">
+    <Link to="/amenities" className="page2-link">
+      <img className="img-fluid" src={amenities} alt="Amenities" />
+      <div>Amenities</div>
+    </Link>
+  </div>
+
+  <div className="col-md-4">
+    <Link to="/packages" className="page2-link">
+      <img className="img-fluid" src={packages} alt="Packages" />
+      <div>Packages</div>
+    </Link>
+  </div>
+
+</div>
+
 
       {/* PAGE 3 */}
       <div className="row page3 mt-4">

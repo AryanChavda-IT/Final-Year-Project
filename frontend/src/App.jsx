@@ -18,10 +18,27 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Home from "./MyComponents/Home/Home.jsx";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Navbar from "./MyComponents/Navbar/Navbar";
+import Home from "./MyComponents/Home/Home";
+import Gallery from "./MyComponents/Gallery/Gallery";
+import Amenities from "./MyComponents/Amenities/Amenities";
+import Packages from "./MyComponents/Packages/Packages";
 
 const App = () => {
-  return <Home />;
+  return (
+    <Router>
+  <Navbar />
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/gallery" element={<Gallery />} />
+    <Route path="/amenities" element={<Amenities />} />
+    <Route path="/packages" element={<Packages />} />
+  </Routes>
+</Router>
+  );
 };
 
 export default App;

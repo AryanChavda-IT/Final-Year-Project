@@ -1,55 +1,24 @@
-// import React from "react";
-// import "./Navbar.css";
-
-// function Navbar() {
-//   return (
-//     <nav className="custom-navbar d-flex justify-content-between align-items-center px-4">
-
-//       {/* Logo */}
-//       <h2 className="logo m-0">Hideaway Resort</h2>
-
-//       {/* Center Menu */}
-//       <ul className="nav-links d-flex gap-4 m-0">
-//         <li><button className="nav-btn">Home</button></li>
-//         <li><button className="nav-btn">Pages</button></li>
-//         <li><button className="nav-btn">Gallery</button></li>
-//         <li><button className="nav-btn">Amenities</button></li>
-//         <li><button className="nav-btn">Packages</button></li>
-//         <li><button className="nav-btn">Our History</button></li>
-//       </ul>
-
-//       {/* Auth Buttons */}
-//       <div className="auth-buttons d-flex gap-2">
-//         <button className="signin-btn">Sign In</button>
-//         <button className="signup-btn">Sign Up</button>
-//       </div>
-
-//     </nav>
-//   );
-// }
-
-// export default Navbar;
-
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="custom-navbar d-flex justify-content-between align-items-center px-4">
 
-      <h2 className="logo m-0">Hideaway Resort</h2>
+      <h2 className="logo m-0">
+        <Link to="/" className="logo-link">Hideaway Resort</Link>
+      </h2>
 
       <ul className="nav-links d-flex gap-4 m-0">
-        <li><button className="nav-btn">Home</button></li>
-        <li><button className="nav-btn">Pages</button></li>
-        <li><button className="nav-btn">Gallery</button></li>
-        <li><button className="nav-btn">Amenities</button></li>
-        <li><button className="nav-btn">Packages</button></li>
-        <li><button className="nav-btn">Our History</button></li>
+        <li><Link to="/" className="nav-btn">Home</Link></li>
+        <li><Link to="/gallery" className="nav-btn">Gallery</Link></li>
+        <li><Link to="/amenities" className="nav-btn">Amenities</Link></li>
+        <li><Link to="/packages" className="nav-btn">Packages</Link></li>
       </ul>
 
       <div className="auth-buttons d-flex gap-2">
-        <button className="signin-btn">Sign In</button>
-        <button className="signup-btn">Sign Up</button>
+        <Link to="/signin" className="signin-btn">Sign In</Link>
+        <Link to="/signup" className="signup-btn">Sign Up</Link>
       </div>
 
     </nav>

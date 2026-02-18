@@ -1,0 +1,38 @@
+.gallery-section {
+  margin-top: 100px;
+}
+
+.gallery-img {
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.page6-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.page6-content {
+  position: relative;
+  color: white;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.email-input {
+  max-width: 300px;
+  margin-right: 10px;
+}
+
+.submit-btn {
+  background: #c59d5f;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}

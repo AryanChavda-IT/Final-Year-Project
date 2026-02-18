@@ -277,3 +277,13 @@ iframe{
 .footer-bottom .footer-links a:hover {
   color: #f1c40f;
 }
+.page2-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.page2-link:hover img {
+  transform: scale(1.05);
+}
